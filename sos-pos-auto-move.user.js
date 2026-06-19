@@ -84,24 +84,24 @@
     #sos-btn {
       position: fixed; bottom: 28px; right: 28px; z-index: 2147483647;
       width: 44px; height: 44px; border-radius: 50%; border: none;
-      cursor: pointer; background: #e2e8f0;
-      box-shadow: 0 2px 8px rgba(0,0,0,.18);
+      cursor: pointer; background: #1e293b;
+      box-shadow: 0 3px 14px rgba(13,148,136,.35);
       transition: background .2s, transform .15s, box-shadow .2s;
       display: flex; align-items: center; justify-content: center;
       -webkit-user-select: none; user-select: none;
     }
-    #sos-btn:hover  { transform: scale(1.1); box-shadow: 0 4px 14px rgba(0,0,0,.22); }
+    #sos-btn:hover  { transform: scale(1.1); box-shadow: 0 4px 14px rgba(13,148,136,.5); }
     #sos-btn:active { transform: scale(.92); }
     #sos-btn.stored  { background: #3b82f6; }
     #sos-btn.settled { background: #f59e0b; }
-    #sos-btn.busy    { background: #94a3b8; cursor: wait; }
+    #sos-btn.busy    { background: #334155; cursor: wait; }
     #sos-btn .dot {
       width: 14px; height: 14px; border-radius: 50%;
-      background: #64748b; transition: background .2s;
+      background: #14b8a6; transition: background .2s;
     }
     #sos-btn.stored .dot  { background: #fff; }
     #sos-btn.settled .dot { background: #fff; }
-    #sos-btn.busy .dot    { background: #e2e8f0; animation: sos-mv-pulse .8s infinite; }
+    #sos-btn.busy .dot    { background: #64748b; animation: sos-mv-pulse .8s infinite; }
     #sos-btn::after {
       content: ''; position: absolute; inset: 0; border-radius: 50%;
       border: 2px solid #f59e0b; opacity: 0; transform: scale(.7); transition: none;
